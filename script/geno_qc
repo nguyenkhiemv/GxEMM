@@ -3,4 +3,4 @@
 --biallelic-only strict --missing-genotype 0 --allow-extra-chr -recode -make-bed --out PsychEncode
 
 #QC bed file
-~/softwares/plink/plink --bfile PsychEncode --mind 0.1 --maf 0.05 --geno 0.1 --hwe 0.001 --make-bed --out PschychEncode.QC 
+~/softwares/plink/plink --bfile PsychEncode --mind 0.1 --maf 0.05 --geno 0.1 --hwe 0.001 --make-bed --out PschychEncode.QC.MAF0.05
