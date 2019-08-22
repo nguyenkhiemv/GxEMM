@@ -77,5 +77,12 @@ individual_list_final <- cbind( as.data.frame(metadata_with_gnt[,16]),as.data.fr
 
 #save final list of individual and metadata file
 write.table( individual_list_final,file='individual_list_final',row.names = F, col.names = F,quote = F) 
-save( metadata_with_gnt,file='meta_data_final.rdata' )
+save( metadata_with_gnt,file='meta_data_final.rdata )
+
+# create final plink bed file
+system( '~/softwares/plink/plink --bfile PsychEncode.QC.MAF0.05.EXPR 
+     --keep individual_list_final  --make-bed 
+     --out PsychEncode.QC.MAF0.05.EXPR.Nonrel' )
+
+
                 
