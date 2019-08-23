@@ -1,2 +1,2 @@
-Flow : data_preprocessing ----> data_prep_gcta -----------> gcta_analysis
+Flow : data_preprocessing ----> data_prep_gcta -----------> kin_mat_cal.R -----------> gcta_analysis
        data_prep_gxemm ---------------> gxemm_analysis
